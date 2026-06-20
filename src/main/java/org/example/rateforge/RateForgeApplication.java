@@ -9,6 +9,7 @@ public class RateForgeApplication {
     public static void main(String[] args) {
         System.out.println("hello");
         SpringApplication.run(RateForgeApplication.class, args);
+        System.out.println("yess");
     }
 
 }
