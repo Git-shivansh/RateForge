@@ -10,6 +10,8 @@ public class RateForgeApplication {
         System.out.println("hello");
         SpringApplication.run(RateForgeApplication.class, args);
         System.out.println("yess");
+        System.out.println("todays commit");
+
     }
 
 }
