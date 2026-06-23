@@ -11,7 +11,7 @@ public class RateForgeApplication {
         SpringApplication.run(RateForgeApplication.class, args);
         System.out.println("yess");
         System.out.println("todays commit");
-
+        // tech stacks used in this project - redis , lua scripts , k6
     }
 
 }
