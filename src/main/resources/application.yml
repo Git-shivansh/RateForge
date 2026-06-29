@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: custom-rate-limiter
+  data:
+    redis:
+      host: ${SPRING_DATA_REDIS_HOST:localhost}
+      port: ${SPRING_DATA_REDIS_PORT:6379}
+
+# ---------------------------------------------------------
+# Switch the active algorithm here without touching code.
+# Valid values: token-bucket | sliding-window | leaky-bucket
+# ---------------------------------------------------------
+rate-limiter:
+  strategy: token-bucket
+  capacity: 10              # token-bucket: max tokens | sliding-window: max requests per window | leaky-bucket: max bucket level
+  refill-rate: 2             # token-bucket only: tokens added per second
+  window-size-seconds: 10    # sliding-window only: size of the rolling window
+  leak-rate: 2                # leaky-bucket only: units leaked (processed) per second
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.ratelimiter: INFO
