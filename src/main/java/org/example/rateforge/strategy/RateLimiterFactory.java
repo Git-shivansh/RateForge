@@ -1,7 +1,7 @@
 package org.example.rateforge.strategy;
 
 
-import com.example.rateforge.config.RateLimiterProperties;
+import org.example.rateforge.config.RateLimiterProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;

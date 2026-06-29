@@ -1,6 +1,6 @@
 package org.example.rateforge.strategy;
-import com.example.rateforge.config.RateLimiterProperties;
-import com.example.rateforge.model.RateLimitResult;
+import org.example.rateforge.config.RateLimiterProperties;
+import org.example.rateforge.model.RateLimitResult;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;

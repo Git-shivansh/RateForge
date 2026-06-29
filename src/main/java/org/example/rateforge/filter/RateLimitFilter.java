@@ -1,8 +1,7 @@
 package org.example.rateforge.filter;
-
-import com.example.rateforge.model.RateLimitResult;
-import com.example.rateforge.strategy.RateLimiterFactory;
-import com.example.rateforge.strategy.RateLimiterStrategy;
+import org.example.rateforge.model.RateLimitResult;
+import org.example.rateforge.strategy.RateLimiterFactory;
+import org.example.rateforge.strategy.RateLimiterStrategy;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -69,3 +68,4 @@ public class RateLimitFilter extends OncePerRequestFilter {
         return userId;
     }
 }
+

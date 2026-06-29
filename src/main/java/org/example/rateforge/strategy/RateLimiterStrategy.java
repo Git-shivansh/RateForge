@@ -1,7 +1,6 @@
 package org.example.rateforge.strategy;
 
-
-import com.ratelimiter.model.RateLimitResult;
+import org.example.rateforge.model.RateLimitResult;
 
 /**
  * Common contract for every rate limiting algorithm. Each implementation
