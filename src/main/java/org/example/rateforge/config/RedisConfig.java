@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Wires up the Redis connection and loads each algorithm's Lua script
  * once at startup. Loading scripts as beans (instead of building the
- * script string in Java) keeps the atomic logic readable and lets Redis
+ * script string in Java Language) keeps the atomic logic readable and lets Redis
  * cache the compiled script server-side.
  */
 @Configuration
