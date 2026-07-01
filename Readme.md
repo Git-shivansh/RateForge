@@ -11,7 +11,7 @@ Every production API has rate limiting somewhere, and almost everyone who's used
 never actually built one. I wanted to understand what's really happening underneath — how
 you avoid race conditions when two requests from the same user land in the same millisecond,
 why some algorithms allow bursts and others don't, and what that actually costs in memory and
-throughput. So instead of pulling in a library, I implemented the algorithms myself, made them
+through put . So instead of pulling in a library, I implemented the algorithms myself, made them
 interchangeable, and benchmarked each one with real traffic patterns.
 
 ## What it does
